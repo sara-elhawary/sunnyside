@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Barlow';
+  font-weight: 600;
+  /* overflow: hidden; */
+}
+
+/**************************************************************************/
+/*************************************ABOUT********************************/
+/**************************************************************************/
+.about {
+  color: white;
+  font-weight: 600;
+  background-image: url('./images/desktop/image-header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 20px;
+}
+.about ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.about li {
+  margin: 0 15px;
+}
+.about h1 {
+  font-size: 3.5rem;
+  font-family: 'Fraunces', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 100px;
+}
+.nav-link {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: solid 2px white;
+  font-size: 15px;
+}
+.nav-link:hover {
+  font-family: 'fraunces';
+  font-size: 12px;
+  color: black;
+  border-radius: 20px;
+  border: solid 2px white;
+  background-color: white;
+}
+.arrow {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* border: red solid 2px; */
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+.arrow {
+  animation: bounce 0.8s infinite alternate;
+}
+
+.arrow img {
+  height: 150px;
+}
+/**************************************************************************/
+/*************************************SERVICES********************************/
+/**************************************************************************/
+.transform,
+.stand {
+  display: flex;
+}
+.service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 4rem;
+  text-align: left;
+}
+.service-text h2 {
+  color: hsl(212, 27%, 19%);
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.service-img {
+  width: 676px;
+  height: auto;
+}
+.visuals {
+  display: flex;
+}
+.visual {
+  position: relative;
+}
+.visual .text-photo {
+  position: absolute;
+  bottom: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px 0;
+  text-align: center;
+}
+
+/**************************************************************************/
+/*************************************tstS*************************/
+/**************************************************************************/
+
+.tsts {
+  /* border: red solid 2px; */
+  padding: 2.4rem;
+  text-align: center;
+}
+.tsts-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tsts h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+  margin: 3rem;
+  font-family: 'Fraunces';
+  letter-spacing: 3px;
+}
+
+.tst-img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.tst {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+}
+.tst-text {
+  color: hsl(212, 27%, 19%);
+}
+.tst-name {
+  font-family: 'Fraunces';
+  font-weight: 900;
+}
+
+.tst-info {
+  margin: 60px 0;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.tst-pos {
+  color: hsl(210, 4%, 67%);
+  font-size: 0.9rem;
+}
+/**************************************************************************/
+/*************************************PROJECTS*************************/
+/**************************************************************************/
+.projects {
+  display: flex;
+  /* border: red solid 2px; */
+}
+.project {
+  /* border: red solid 2px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.project img {
+  width: 340px;
+  /* heigth: 20%; */
+}
+/**************************************************************************/
+/*************************************FOOTER*************************/
+/**************************************************************************/
+footer {
+  color: hsl(167, 40%, 24%);
+  background-color: #8accc0;
+  padding: 5rem 5rem 0;
+  /* border: red solid 2px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.footer-logo {
+  font-size: 2rem;
+  font-family: 'fraunces';
+  font-weight: 900;
+}
+.menu {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+}
+.social {
+  display: flex;
+  gap: 1rem;
+}
+.copyright {
+  color: white;
+  margin-top: 1.5rem;
+}
